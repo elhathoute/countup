@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter UI</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/highlight-github.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="row" >
+          <div class="col-lg-12" id="block">
+            <div class="card h-100" id="block">
+              <div class="card-body p-0 p-md-3 m-0 m-md-1" id="block">
+                <div class="card bg-dark overflow-hidden h-100" id="block">
+                  <div class="card-body mt-lg-3" id="block">
+                    <div class="d-flex justify-content-center"  >
+                      <canvas id="countdown-canvas"></canvas>
+                    </div>
+    
+                    <div class="text-center mx-auto my-4 my-lg-5 d-flex" style="max-width: 300px;">
+                      <button type="button" class="btn btn-block btn-sm btn-light my-0 mr-2" id="start-btn" title="Start">
+                        <img src="assets/play.svg" width="20" height="20" alt="Start">
+                        <span class="sr-only">Start</span>
+                      </button>
+    
+                      <button type="button" class="btn btn-block btn-sm btn-light my-0 mr-2" id="stop-btn" title="Stop">
+                        <img src="assets/pause.svg" width="20" height="20" alt="Stop">
+                        <span class="sr-only">Stop</span>
+                      </button>
+    
+                      <button type="button" class="btn btn-block btn-sm btn-light my-0" id="reset-btn" title="Reset">
+                        <img src="assets/reset.svg" width="20" height="20" alt="Reset">
+                        <span class="sr-only">Reset</span>
+                      </button>
+                    </div>
+    
+                    <div class="card">
+                      <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded" style="font-size: 0.95rem; line-height: 1;">
+                          <li style="display:none" class="list-group-item">Remaining time: <code
+                              id="remaining-time"></code>ms</li>
+                          <li style="display:none" class="list-group-item">Elapsed time: <code id="elapsed-time"></code>ms
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="js/highlight.pack.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

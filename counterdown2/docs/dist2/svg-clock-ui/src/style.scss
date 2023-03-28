@@ -1,0 +1,75 @@
+@import "compass";
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Dosis:300,400,600,700,800|Droid+Sans:400,700|Lato:300,400,700,900|PT+Sans:400,700|Ubuntu:300,400,500,700|Open+Sans:400,300,600,700|Roboto:400,300,500,700,900|Roboto+Condensed:400,300,700|Open+Sans+Condensed:300,700|Play:400,700|Maven+Pro:400,500,700,900&subset=latin,latin-ext);
+
+$mainColor: #1bbccb; // Blue
+//$mainColor: #de9235; // Orange
+//$bgColor: darken($mainColor, 25%);
+$bgColor: #215769;
+
+$greyColor: #2a2a2a;
+$textColor: White;
+
+$fontClock: "Open Sans";
+$fontCaptions: "Source Sans Pro";
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #222;
+	overflow: hidden;
+}
+
+svg {
+	position: absolute;
+	width: 800px;
+	height: 480px;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+	
+	@include background-image(linear-gradient(Black 60%, $bgColor 100%));
+	
+	@include border-radius(10px);
+	@include box-shadow(0 0 50px rgba(Black, 0.8));
+}
+
+.bgDot {
+	stroke: none; 
+	fill: $bgColor;
+}
+
+.clockCircle {
+	fill: none;
+	stroke: $greyColor;
+}
+
+.clockArc {
+	fill: none;
+	stroke: $mainColor;
+}
+
+.clockDot {
+	fill: lighten($mainColor, 50%);
+}
+
+.caption {
+	font-family: $fontCaptions;
+	font-weight: 300;
+	fill: $textColor;
+}
+
+.dayText {
+	font-size: 1.7rem;
+}
+
+.dateText {
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+.timeText {
+	font-family: $fontClock;
+	font-size: 5rem;
+	font-weight: 600;
+	fill: $textColor;
+}

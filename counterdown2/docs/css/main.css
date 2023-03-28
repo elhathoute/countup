@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 300;
+}
+
+.small, small {
+  font-size: 85%;
+}
+
+.card {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
+  border: 0;
+}
+
+/* custom */
+
+.new-instance-success {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.new-instance-success.visible {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 540px) {
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .small, small {
+    font-size: 80%;
+  }
+}
+
+#block {
+ 
+  background: var(--bg);
+}
+.color-picker{
+  border: none;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.btn-option{
+  background-color: rgba(255,255,255,0.1);
+  margin-top: calc(var(--ht)/4);
+  padding: calc(var(--ht)/4);
+}
+button{
+  border: none;
+  padding: calc(var(--ht)/6);
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
